@@ -17,7 +17,7 @@ class AccountNumberParser
     @file = file
   end
 
-  def parse(file)
+  def parse
     file.split('\n').each_slice(ENTRY_LENGTH).map do |line|
       read(line)
     end

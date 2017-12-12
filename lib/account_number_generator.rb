@@ -4,7 +4,7 @@ class AccountNumberGenerator
   end
 
   def generate
-    account_number = AccountNumberParser.new.parse(file)
+    account_number = AccountNumberParser.new(file).parse
   end
 
   private
